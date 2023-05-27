@@ -1,11 +1,12 @@
 version: 0.2
 run-as: Linux-user-name
 phases:
-  say-hi:
+  pre_build:
     run-as: Linux-user-name
-    on-failure: ABORT | CONTINUE
+    on-failure: ABORT
     commands:
       - echo hello
     finally:
       - echo bye
+
 
