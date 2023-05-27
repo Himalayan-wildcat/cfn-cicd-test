@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Test cfn Template
+# Parameters:
+#   InstanceType:
+#     Type: String
+#     Default: t2.micro
+#     AllowedValues:
+#       - t2.micro
+#       - t2.small
+#       - t2.medium
+#     Description: Select EC2 instance type.
+#   KeyPair:
+#     Description: Select KeyPair Name.
+#     Type: AWS::EC2::KeyPair::KeyName
+Resources:
+  VPC:
+    Type: "AWS::EC2::VPC"
+    Properties:
+      CidrBlock: 172.16.0.0/16
+      Tags:
+        - Key: Name
+          Value: foobar
+        - Key: fizz
+          Value: buzz
+
