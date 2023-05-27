@@ -19,7 +19,6 @@ Resources:
       CidrBlock: 172.16.0.0/16
       Tags:
         - Key: Name
-          Value: foobar
-        - Key: fizz
-          Value: buzz
+          Value: 0527-cnf-test
+
 
