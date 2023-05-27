@@ -20,5 +20,7 @@ Resources:
       Tags:
         - Key: Name
           Value: 0527-cnf-test
+        - Key: foo
+          Value: bar
 
 
