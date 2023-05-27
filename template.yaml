@@ -22,7 +22,7 @@ Resources:
           Value: 0527-cnf-test
         - Key: foo
           Value: bar
-        - Key: hoge
-          Value: huga
+        - Key: ho
+          Value: hu
 
 
