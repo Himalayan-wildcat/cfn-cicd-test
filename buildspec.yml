@@ -1,0 +1,11 @@
+version: 0.2
+run-as: Linux-user-name
+phases:
+  say-hi:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
+    commands:
+      - echo hello
+    finally:
+      - echo bye
+
